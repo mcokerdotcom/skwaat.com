@@ -1,0 +1,273 @@
+<?
+	$baseURL = 'http://skwaat.com';
+	$curURL = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	$title = 'Super Training Gym Powercast Crew - Mark &quot;Smelly&quot; Bell, Silent Mike, and Jim McDonald'; 
+?>
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title><?= $title ?></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<style>
+	* {margin:0;padding:0;box-sizing:border-box;-moz-box-sizing:border-box;}
+	.cf {overflow:auto;}
+	body,html {
+		height: 100%;
+		width: 100%;
+	}
+	.preload {
+		display: none;
+	}
+	body {
+		font-family: Nunito,sans-serif;
+		color: #fff;
+		display: table;
+		table-layout: fixed;
+		position: relative;
+		background: #111;
+	}
+	#header {
+		z-index: 1000;
+		position: absolute;
+		top: 0; left: 0; right: 0;
+		background: #000;
+		background: rgba(0,0,0,0.7);
+		padding: 0.5em;
+	}
+	#nav {
+		text-align: center;
+	}
+	#nav .toggle {
+		display: none;
+		text-decoration: none;
+	}
+	#nav li {
+		display: inline-block;
+		list-style: none;
+		margin: 0 0 0 2em;
+	}
+	#nav a {
+		color: #fff;
+	}
+	#nav h2 {
+		font-size: 1em;
+	}
+	.teammember {
+		display: table-cell;	
+		text-align: center;
+		width: 100%;
+		vertical-align: middle;
+		outline: 0;
+	}
+	.teammember a {
+		color: #fff;
+		text-decoration: none;
+	}
+	.teammember .meta {
+		z-index: 1000;
+		display: none;
+		background: #000;
+		background: rgba(0,0,0,0.7);
+		position: absolute;
+		bottom: 0; left: 0; right: 0;
+		padding: 2em;
+		cursor: auto;
+	}
+	.teammember .meta a {
+		color: #e20000;
+	}
+	.teammember .meta .close {
+		font-size: 1.5em;
+		color: #fff;
+		position: absolute;
+		top: .5em; right: 1em;
+	}
+	.teammember h1 {
+		font-size: 1.25em;
+		display: inline;
+		text-transform: uppercase;
+		border: 2px solid #fff;
+		padding: 1em;
+	}
+	.teammember h2 {
+		font-size: 1.25em;
+		margin: 0 0 .5em;
+	}
+	.teammember h2 .row {
+		display: block;
+	}
+	.teammember:hover h1, .teammember:focus h1, .teammember.active h1 {
+		background: #000;
+		background: rgba(0,0,0,0.5);
+	}
+	.teammember {
+		min-height: 0;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		-o-background-size: cover;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		cursor: pointer;
+	}
+	.teammember:not(:last-child) {
+		border-right: 4px solid #fff;
+	}
+	#mark {
+		background-image: url('mark_bw.jpg');
+	}
+	#mark:hover, #mark:focus, #mark.active {
+		background-image: url('mark.jpg');
+	}
+	#silentmike {
+		background-image: url('silentmike_bw.jpg');
+	}
+	#silentmike:hover, #silentmike:focus, #silentmike.active {
+		background-image: url('silentmike.jpg');
+	}
+	#jimmcd {
+		background-image: url('jimmcd_bw.jpg');
+	}
+	#jimmcd:hover, #jimmcd:focus, #jimmcd.active {
+		background-image: url('jimmcd.jpg');
+	}
+	@media (max-width: 640px) {
+		body {
+			display: block;
+		}
+		#nav {
+			min-height: 1.5em;
+		}
+		#nav ul {
+			display: none;
+		}
+		#nav .open ~ ul {
+			display: block;
+		}
+		#nav li {
+			display: block;
+		}
+		#nav .toggle {
+			display: block;
+			position: absolute;
+			top: .5em; right: 1em;
+		}
+		.teammember {
+			display: block;
+			background-position: center 20%;
+			position: relative;
+			border: none!important;
+		}
+		.teammember, .teammember .meta {
+			min-height: 300px;
+		}
+		.teammember > a {
+			position: absolute;
+			top: 40%;
+			display: block;
+			width: 75%;
+			left: 12%;
+		}
+		.teammember h1 {
+			display: block;
+		}
+		.teammember .meta {
+			background: rgba(0,0,0,0.9);
+			position: relative;
+			width: 100%; height: 100%;
+			left: auto; right: auto; bottom: auto;
+		}
+	}
+	</style>
+	<meta property="og:image" content="<?= $baseURL ?>/powercast_mark_bell_silent_mike_jim_mcdonald.jpg">
+	<meta property="og:url" content="<?= $curURL ?>">
+	<meta property="og:title" content="<?= $title ?>">
+</head>
+<body>
+
+<header id="header">
+	<nav id="nav" class="cf">
+		<a href="#" title="Show Menu" class="toggle">&bull;&bull;&bull;</a>
+		<ul>
+			<li>Buy some shit:</li>
+			<li><a href="http://gummymall.com/markbell" title="buy a mark bell, slingshot, skwaat t-shirt"><h2>Super Training Clothing</h2></a></li>
+			<li><a href="http://www.howmuchyabench.net/sling-shots.html" title="Sling Shots"><h2>Sling Shots</h2></a></li>
+			<li><a href="http://www.howmuchyabench.net/wraps.html" title="Sling Shot Wraps"><h2>Wraps</h2></a></li>
+			<li><a href="http://www.howmuchyabench.net/hip-circles.html" title="Sling Shot Hip Circles"><h2>Hip Circles</h2></a></li>
+			<li><a href="http://www.howmuchyabench.net/cuffs.html" title="Sling Shot Cuffs"><h2>Cuffs</h2></a></li>
+			<li><a href="http://www.howmuchyabench.net/supplements.html" title="Sling Shot Protein"><h2>Sling Shot Protein</h2></a></li>
+			<li><a href="" title=""></a></li>
+		</ul>
+	</nav>
+</header>
+
+<section id="mark" class="teammember">
+	<a href="#mark"><h1>Mark "Smelly" Bell</h1></a>
+	<div class="meta">
+		<h2>Name: Mark Bell (aka "Smelly")</h2>
+		<h2>Weight: Obese</h2>
+		<h2><span class="row">1,025 lb (465 kg) squat</span> <span class="row">738 lb (335 kg) deadlift</span> <span class="row">832 lb (377 kg) bench</h2>
+		<h2><span class="row">Instagram: <a href="https://instagram.com/marksmellybell/">@marksmellybell</a></span> <span class="row">Twitter: <a href="https://twitter.com/marksmellybell">@marksmellybell</a></span> <span class="row">Facebook: <a href="https://www.facebook.com/MarkBellSuperTraining?fref=ts">MarkBellSuperTraining</a></span> <span class="row">YouTube: <a href="https://www.youtube.com/user/supertraining06">supertraining06</a></span></h2>
+		<a href="#" title="close" class="close">x</a>
+	</div>
+</section>
+
+<section id="silentmike" class="teammember">
+	<a href="#silentmike"><h1>Silent Mike</h1></a>
+	<div class="meta">
+		<h2>Name: Silent Mike (aka "The Black John Stockton")</h2>
+		<h2>Weight: Featherweight</h2>
+		<h2><span class="row">1000 squat</span> <span class="row">500 deadlift</span> <span class="row">135 bench</h2>
+		<h2>Instagram: <a href="https://instagram.com/silentmikke/">@silentmikke</a></h2>
+		<a href="#" title="close" class="close">x</a>
+	</div>
+</section>
+
+<section id="jimmcd" class="teammember">
+	<a href="#jimmcd"><h1>Jim McDonald</h1></a>
+	<div class="meta">
+		<h2>Name: Jim McDonald (aka "The People's Champ")</h2>
+		<h2>Weight: All in the calves</h2>
+		<h2><span class="row">1000 squat</span> <span class="row">500 deadlift</span> <span class="row">135 bench</span></h2>
+		<h2>Instagram: <a href="https://instagram.com/jimmcdsttv/">@jimmcdsttv</a></h2>
+		<a href="#" title="close" class="close">x</a>
+	</div>
+</a>
+
+<script>
+	$(function() {
+		$('.teammember').on('click',function(e) {
+			if ($(this).hasClass('active')) {
+				$(this).removeClass('active');
+			} else {
+				$(this).siblings().removeClass('active').end().addClass('active');
+			}
+			e.preventDefault();
+			var box = $(this).find('.meta:hidden');
+			$('.meta').stop().fadeOut();
+			$(box).stop().fadeIn();
+		}).find('.meta').on('click',function(e) {
+			e.stopPropagation();
+		}).find('.close').on('click',function(e) {
+			e.preventDefault();
+			$('.teammember').removeClass('active');
+			$(this).closest('.meta').fadeOut();
+		});;
+		$('.toggle').on('click',function(e) {
+			e.preventDefault();
+			$(this).toggleClass('open');
+		});
+	});
+</script>
+
+	<img src="/mark.jpg" class="preload">
+	<img src="/silentmike.jpg" class="preload">
+	<img src="/jimmcd.jpg" class="preload">
+
+</body>
+</html>

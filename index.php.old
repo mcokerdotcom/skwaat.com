@@ -1,0 +1,48 @@
+<?
+	$baseURL = 'http://skwaat.com';
+	$curURL = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+?>
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Powercast Powerlifting Crew - Mark "Smelly" Bell, Silent Mike, and Jim McDonald</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="/style.css" type="text/css" rel="stylesheet" media="all">
+	<meta property="og:image" content="<?= $baseURL ?>/mark_bell_squat_sized.jpg">
+	<meta property="og:url" content="<?= $curURL ?>">
+	<meta property="og:title" content="<?= $title ?>">
+</head>
+<body>
+
+	<header>
+		<h1>Skwaats!</h1>
+		<h2>don't blow an o-ring</h2>
+		<h3>#nohetero</h3>
+	</header>
+
+	<!--
+	<nav id="nav">
+		<ul>
+			<li><a href="http://gummymall.com/markbell">t-shirts</a></li>
+			<li><a href="http://gummymall.com/markbell">hoodies</a></li>
+			<li><a href="http://gummymall.com/markbell">tank tops/stringers</a></li>
+			<li><a href="http://gummymall.com/markbell">slingshot products</a></li>
+		</ul>
+	</nav>
+
+	<div id="main">
+		<h2>but buy a fuckin' t-shirt!</h2>
+		<div id="carousel">
+			<a href="http://gummymall.com/markbell"><img src="http://gummymall.com/image/cache/data/Mark%20Bell/MB_Skwaats_Tee_black-700x700.jpg" alt="skwaat t-shirt" title="SKWAATS"></a>
+		</div>
+	</div>
+	-->
+
+	<footer>
+	</footer>
+
+</body>
+</html>
